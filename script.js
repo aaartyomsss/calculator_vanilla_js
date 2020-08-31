@@ -10,12 +10,21 @@ let minus = document.querySelector('#minus');
 let multiply = document.querySelector('#mp-ly');
 let divide = document.querySelector('#divide');
 let result = document.querySelector('#result');
+let clear = document.querySelector('#clear');
+
+
+// Clear button and operation
+
+clear.addEventListener('click', clearResult);
+
+function clearResult() {
+    placeholder.textContent = 'Cleared';
+}
 
 // Setting operation to + and setting first number to variable
 pluss.addEventListener('click', plussSign);
 
 function plussSign() {
-    console.log(input1.value);
     firstNum = input1.value;
     input1.value = '';
     operation = '+';

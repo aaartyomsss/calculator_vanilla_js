@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.input {
+    display: grid;
+    grid-area: input;
+}
+
+.pluss {
+    display: grid;
+    grid-area: pluss;
+}
+
+.minus {
+    display: grid;
+
+    grid-area: minus;
+}
+
+.mp-ly {
+    display: grid;
+    
+    grid-area: mltp;
+}
+
+.divide {
+    display: grid;
+    
+    grid-area: divide;
+}
+
+.result {
+    display: grid;
+    
+    grid-area: result;
+}
+
+.clear {
+    display: grid;
+    
+    grid-area: clear;
+}
+
+#calculator{
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-areas: 
+    'input input input input'
+    'pluss pluss divide divide'
+    'pluss pluss divide divide'
+    'equal equal equal equal'
+    'equal equal equal equal';
+}
